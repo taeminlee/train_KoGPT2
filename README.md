@@ -1,5 +1,5 @@
 # train_KoGPT2
-Train pytorch transformer models including KoGPT2
+Pre-train and fine-tune transformer models including KoGPT2
 
 # Requirements
 pip install -r requirements.txt
