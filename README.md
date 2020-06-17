@@ -20,7 +20,7 @@ Current arguments are set up for pre-training KoGPT2 with gluonnlp tokenizer. Ch
 # Example 
 Additional pre-train KoGPT2 for [NSMC dataset](https://github.com/e9t/nsmc)
 
-NSMC 데이터셋으로 KoGPT2를 추가 학습해보았습니다. 커맨드는 아래와 같습니다.
+NSMC 데이터셋(라벨 제외)으로 KoGPT2를 추가 학습한 경우의 예시입니다. 커맨드는 아래와 같습니다.
 
 > python3 run_language_modeling.py --do_train --output_dir=train_output --train_data_file=dataset/ratings_train.txt --do_eval --eval_data_file=dataset/ratings_test.txt
 
