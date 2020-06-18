@@ -135,12 +135,14 @@ class DataTrainingArguments:
     )
     line_by_line: bool = field(
         default=False,
-        metadata={"help": "Whether distinct lines of text in the dataset are to be handled as distinct sequences."},
+        metadata={"help": "Whether splits your data into chunks, being careful not to overstep line returns as each line is interpreted as a document." 
+                  "Set True/False based on what your corpus looks like."},
     )
 
     text_dataset: bool = field(
         default=False,
-        metadata={"help": "when use TextDataset class for pre-processing"},
+        metadata={"help": "Whether splits your data into chunks with no attention whatsoever to the line returns or separators." 
+                  "Set True/False based on what your corpus looks like."},
     )
 
     mlm: bool = field(
