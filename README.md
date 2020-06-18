@@ -30,6 +30,7 @@ NSMC 데이터셋(라벨 제외)으로 KoGPT2를 추가 학습한 경우의 예�
 
 # How to use
 기본적으로 SKT의 KoGPT2에 맞추어져 있습니다. 만약 트랜스포머 기반 pre-trained KoGPT2 모델(EX.[KoGPT2/Transformers](https://github.com/taeminlee/KoGPT2-Transformers))로 변경하고 싶으시면 '--model_name_or_path'를 바꿔주세요. (EX.'taeminlee/kogpt2')
+마찬가지로 Pre-train을 진행한 후에 생성되는 output directory를 '--model_name_or_path'의 인자로 입력하면 직접 훈련한 모델을 파인튜닝할 수 있습니다.
 
 # Example
 
