@@ -32,7 +32,7 @@ It is also compatible for both transformer model(AutoModelWithLMHead) and pre-tr
 > python3 run_language_modeling.py --do_train --output_dir=train_output --train_data_file=dataset/ratings_train.txt --do_eval --eval_data_file=dataset/ratings_test.txt
 
 ## Generate
-```
+```python
 import torch
 import gluonnlp as nlp
 from utils import get_tokenizer
