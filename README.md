@@ -13,7 +13,7 @@ SKT-AI에서 공개한 KoGPT2를 포함한 허깅페이스 기반 트랜스포�
 트랜스포머 기반 토크나이저 뿐만 아니라 gluonnlp의 BERTSPTokenizer도 사용할 수 있도록 하였습니다.
 
 # How to use
-Current arguments are set up for pre-training KoGPT2 with gluonnlp tokenizer. Change arguments such as 'model_name_or_path', 'config_name' and 'use_gluonnlp_tokenizer' if you want to use other tokenizer and model for training.
+Current arguments are set up for pre-training KoGPT2 with gluonnlp-BERTSPTokenizer. Change arguments such as 'model_name_or_path', 'config_name' and 'use_gluonnlp_tokenizer' if you want to use other tokenizer and model for training.
 
 코드는 기본적으로 gluonnlp-BERTSPTokenizer로 KoGPT2를 추가 훈련하도록 맞춰져있습니다. 트랜스포머의 모델이나 토크나이저를 사용하고 싶은 경우 'model_name_or_path', 'config_name' and 'use_gluonnlp_tokenizer' 등의 인자를 변경해주세요. 
 
