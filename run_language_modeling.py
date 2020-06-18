@@ -354,7 +354,7 @@ def main():
         trainer.save_model()
         # For convenience, we also re-save the tokenizer to the same directory,
         # so that you can share your model easily on huggingface.co/models =)
-        if trainer.is_world_master():
+        if trainer.is_world_master() and model_args.use_gluonnlp_tokenizer == False:
             tokenizer.save_pretrained(training_args.output_dir)
 
     # Evaluation
