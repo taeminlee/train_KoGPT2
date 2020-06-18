@@ -37,7 +37,6 @@ import torch
 import gluonnlp as nlp
 from utils import get_tokenizer
 from transformers import AutoModelWithLMHead, AutoConfig
-import re
 
 tok_path = get_tokenizer()
 config = AutoConfig.from_pretrained("train_output")
