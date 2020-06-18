@@ -4,6 +4,13 @@ Pre-train and fine-tune transformer models including KoGPT2
 # Requirements
 pip install -r requirements.txt
 
+* python >= 3.6
+* torch == 1.4.0                                                                                                          
+* mxnet == 1.6.0                                                                                                          
+* gluonnlp == 0.9.1                                                                                                       
+* transformers == 2.9.1                                                                                                   
+* wandb == 0.8.36
+
 ## Pre-train transformer: 'run_language_modeling.py'
 Modified [Huggingface-language_modeling.py](https://github.com/huggingface/transformers/tree/master/examples/language-modeling) and [SKT-KoGPT2](https://github.com/SKT-AI/KoGPT2).
 The modified code is compatible for both transformer tokenizer(AutoTokenizer) and gluonnlp tokenizer(BERTSPTokenizer).
