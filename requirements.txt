@@ -3,3 +3,4 @@ mxnet == 1.6.0
 gluonnlp == 0.9.1                                                                                                       
 transformers == 2.9.1                                                                                                   
 wandb == 0.8.36
+jupyter==1.0.0
