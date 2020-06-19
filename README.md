@@ -10,6 +10,7 @@ pip install -r requirements.txt
 * gluonnlp == 0.9.1                                                                                                       
 * transformers == 2.9.1                                                                                                   
 * wandb == 0.8.36
+* jupyter==1.0.0
 
 # Pre-train transformer: 'run_language_modeling.py'
 * Modified [Huggingface-language_modeling.py](https://github.com/huggingface/transformers/tree/master/examples/language-modeling) and [SKT-KoGPT2](https://github.com/SKT-AI/KoGPT2).
