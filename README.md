@@ -14,10 +14,12 @@ pip install -r requirements.txt
 # Pre-train transformer: 'run_language_modeling.py'
 * Modified [Huggingface-language_modeling.py](https://github.com/huggingface/transformers/tree/master/examples/language-modeling) and [SKT-KoGPT2](https://github.com/SKT-AI/KoGPT2).
 The modified code is compatible for both transformer tokenizer(AutoTokenizer) and gluonnlp tokenizer(BERTSPTokenizer).
-It is also compatible for both transformer model(AutoModelWithLMHead) and pre-trained KoGPT2 model(GP2LMHeadModel)
+It is also compatible for both transformer model(AutoModelWithLMHead) and pre-trained KoGPT2 model(GP2LMHeadModel).
+You can use either Transformer class (LineByLineText, TextDataset) or gluonnlp class (TSVDataset) for pre-processing based on what your dataset looks like.
 
 * SKT-AI에서 공개한 KoGPT2를 포함한 허깅페이스 기반 트랜스포머 모델들(BERT,GPT2 등)을 훈련할 수 있는 코드입니다.
 트랜스포머 기반 토크나이저 뿐만 아니라 gluonnlp의 BERTSPTokenizer도 사용할 수 있도록 하였습니다.
+데이터셋 형태에 따라 트랜스포머의 LinebyLineText 클래스와 TextDataset 클래스, 혹은 gluonnlp의 TSVDataset을 선택해서 사용하시면 됩니다.
 
 ## How to use
 * Current arguments are set up for pre-training KoGPT2 with gluonnlp-BERTSPTokenizer. Change arguments such as 'model_name_or_path', 'config_name' and 'use_gluonnlp_tokenizer' if you want to use other tokenizer and model for training.
@@ -25,7 +27,7 @@ It is also compatible for both transformer model(AutoModelWithLMHead) and pre-tr
 * 코드는 기본적으로 gluonnlp-BERTSPTokenizer로 KoGPT2를 추가 훈련하도록 맞춰져있습니다. 트랜스포머의 모델이나 토크나이저를 사용하고 싶은 경우 'model_name_or_path', 'config_name' and 'use_gluonnlp_tokenizer' 등의 인자를 변경해주세요. 
 
 ## Example 
-* Additional pre-train KoGPT2 for [NSMC dataset](https://github.com/e9t/nsmc)
+* Additional pre-train KoGPT2 with [NSMC dataset](https://github.com/e9t/nsmc)
 
 * NSMC 데이터셋(라벨 제외)으로 KoGPT2를 추가 학습한 경우의 예시입니다. 커맨드는 아래와 같습니다.
 
